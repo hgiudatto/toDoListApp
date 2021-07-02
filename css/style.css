@@ -1,5 +1,6 @@
 body{
   margin: 50px;
+  font-weight: bold;
 };
 
 body{
@@ -95,17 +96,6 @@ form textarea {
   border: none;
 }
 
-form input.submit {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-  border-radius: 17px;
-  background: #c59615;
-  color: white;
-  padding: 6px;
-  border: none;
-}
-
 form label {
   margin-left: 6px;
   text-transform: uppercase;
@@ -131,6 +121,28 @@ button {
   padding: 7px 25px;
   border: none;
   border-radius: 23px;
+}
+
+input[type=submit] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 17px;
+  background: #c59615;
+  color: rgb(71, 1, 1);
+  padding: 6px;
+  border: none;
+}
+
+input[type=button] {
+  display: block;
+  margin-bottom: 10px;
+  width: 41%;
+  border-radius: 17px;
+  background: #0813b1;
+  color: white;
+  padding: 6px;
+  border: none;
 }
 
 form span {
