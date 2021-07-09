@@ -13,6 +13,18 @@ toDoListApp.controller('toDoListController', function ($scope, localStorageServi
       actividad: 'Terminar la app del TODO List',
       fecha: '2021-07-05'
   } */
+  
+  /* $scope.$watch(function() {
+      return $scope.newActv;
+  }, function(newValue, oldValue) {
+      console.log(newValue);
+      console.log(oldValue);
+  }); */
+  
+  $scope.$watchCollection('todo', function(newValue, oldValue) {
+      localStorageService.set("angular-todoList", $scope.todo);
+  });
+
   $scope.addActv = function () {
       $scope.todo.push($scope.newActv);
       $scope.newActv = {};
